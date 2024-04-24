@@ -2,6 +2,7 @@ import React from 'react'
 import { Table } from '@mantine/core'
 
 const Table2 = ({agriData}) => {
+    // To group the data with crop name
     const cropData = agriData.reduce((acc, curr) => {
         const cropName = curr['Crop Name'];
         if (!acc[cropName]) {
@@ -11,10 +12,11 @@ const Table2 = ({agriData}) => {
         return acc;
     }, {});
 
+    // To calculate the average and then store it 
     const cropSummary = Object.entries(cropData).map(([cropName, data]) => {
         const totalYield = data.reduce((sum, entry) => sum + parseFloat(entry['Yield Of Crops (UOM:Kg/Ha(KilogramperHectare))'] || 0), 0);
         const totalArea = data.reduce((sum, entry) => sum + parseFloat(entry['Area Under Cultivation (UOM:Ha(Hectares))'] || 0), 0);
-        const averageYield = totalYield / data.length;
+        const averageYield = totalYield / data.length; // data.length to find the average.
         const averageArea = totalArea / data.length;
         return {
             cropName,
