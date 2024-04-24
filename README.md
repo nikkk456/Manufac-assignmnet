@@ -5,7 +5,7 @@ This is a frontend application for Manufac Assignment where we perform some anal
 ## INSTALLATION
 
 1. Clone this repository to your local machine:
-git clone https://github.com/nikkk456/Manufac-assignment
+git clone https://github.com/nikkk456/Manufac-assignmnet
 
 2. Navigate to the project directory:
 
@@ -38,8 +38,8 @@ This command will compile the project's source code and generate the production-
 ## ScreenShots
 
 ### Table1
-![Table 1 ](/screenshots/Table1.png)
+![Table 1 ](/screenshot/Table1.png)
 
 ### Table2
-![Table 2 ](/screenshots/Table2.png)
+![Table 2 ](/screenshot/Table2.png)
 
